@@ -1,0 +1,33 @@
+{
+  "name": "container",
+  "image": "miskamyasa/mise-ub-24-04:3",
+  "remoteUser": "ubuntu",
+  "workspaceFolder": "${localWorkspaceFolder}",
+  "workspaceMount": "source=${localWorkspaceFolder},target=${localWorkspaceFolder},type=bind",
+  "containerEnv": {
+    "NODE_OPTIONS": "--max-old-space-size=8192",
+    "MISE_TRUSTED_CONFIG_PATHS": "${localWorkspaceFolder}",
+    "OPENCODE_DISABLE_CLAUDE_CODE": true,
+    "OPENCODE_DISABLE_LSP_DOWNLOAD": true,
+    // Pay attention to this variable, it will enable opencode do whatever it wants in the container without asking for permissions
+    "OPENCODE_YOLO": true
+  },
+  "initializeCommand": "mkdir -p ${localEnv:HOME}/.cache/containers/opencode-data/container-${localWorkspaceFolderBasename}",
+  "mounts": [
+    "source=${localEnv:HOME}/Downloads/screenshots,target=${localWorkspaceFolder}/screenshots,type=bind,readonly",
+    // Shared mounts between containers, to save space and speed up builds. 
+    "source=${localEnv:HOME}/.cache/containers/cache,target=/home/ubuntu/.cache,type=bind",
+    "source=${localEnv:HOME}/.cache/containers/local-share,target=/home/ubuntu/.local/share,type=bind",
+    // OpenCode share data folder
+    "source=${localEnv:HOME}/.cache/containers/opencode-data/container-${localWorkspaceFolderBasename},target=/home/ubuntu/.local/share/opencode,type=bind",
+    "source=${localEnv:HOME}/.local/share/opencode/auth.json,target=/home/ubuntu/.local/share/opencode/auth.json,type=bind",
+    // OpenCode config.
+    "source=${localEnv:HOME}/.config/opencode,target=/home/ubuntu/.config/opencode,type=bind,readonly",
+        // Main worktree folder mount
+    "source=${localWorkspaceFolder}/../develop,target=${localWorkspaceFolder}/../develop,type=bind,readonly"
+  ],
+  "runArgs": [
+    "--name=container-${localWorkspaceFolderBasename}"
+  ],
+  "postCreateCommand": "mise install"
+}

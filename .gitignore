@@ -1,0 +1,154 @@
+# Ignore all files by default
+*
+
+!AGENTS.md
+
+# This file
+!.gitignore
+!.gitignore_global
+
+# Terminal Emulator
+!alacritty/
+!alacritty/alacritty-*.toml
+!alacritty/install.sh
+!alacritty/theme-autoswitch.sh
+
+# Useful scripts
+!bin/
+!bin/**/*
+
+# Btop System Monitor
+!btop/
+!btop/**/*
+
+# Claude Code statusline plugin
+!ccstatusline/
+!ccstatusline/settings.json
+
+# Code Stats
+!code-stats/config.toml
+
+# Colima Container Runtime
+!colima/
+!colima/**/
+!colima/_templates/default.yaml
+
+# Crush CLi Ai Agent
+!crush/
+!crush/**/*
+
+# Delve Debugger
+!dlv/
+!dlv/**/*.yml
+
+# Docker CLI Ai Agent
+!dockercli/
+!dockercli/Dockerfile*
+!dockercli/devcontainer.template.json
+
+# GitHub CLI
+!gh/    
+!gh/**/*.yml
+
+# Ghostty Terminal Emulator
+!ghostty/
+!ghostty/config
+
+# Git Configuration
+!git/
+!git/ignore
+
+# GitHub Copilot
+!github-copilot/
+!github-copilot/intellij/
+!github-copilot/intellij/**/*.md
+
+# Htop System Monitor
+!htop/
+!htop/htop.rc
+
+# Karabiner-Elements Keyboard Customizer
+!karabiner/
+!karabiner/karabiner.json
+
+# Lazygit Git UI
+!lazygit/
+!lazygit/config.yml
+
+# Python Interactive Books
+!marimo/
+!marimo/marimo.toml
+
+# Terminal File Manager
+!mc/
+!mc/**/*
+
+# CLI Tools Version Manager (Node, Python, Go, etc.)
+!mise/
+!mise/config.toml
+
+# ??
+!mume/
+!mume/**/*
+
+# OpenCode CLI Ai Agent
+!opencode/
+!opencode/**/
+!opencode/**/*.md
+!opencode/**/opencode.json
+!opencode/**/opencode_*.json
+!opencode/plugins/
+!opencode/plugins/*.ts
+
+# PGCli Postgres Client
+!pgcli/
+!pgcli/config
+
+# Pi Ai coding agent
+!pi/
+!pi/**/
+!pi/**/*.md
+!pi/**/*.ts
+
+# PNPM Node Packages Manager
+!pnpm/
+!pnpm/rc
+
+# Superfile Terminal File Manager
+!superfile/
+!superfile/config.toml
+!superfile/hotkeys.toml
+
+# Tmux Terminal Multiplexer
+!tmux/
+!tmux/tmux.conf
+!tmux/scripts/
+!tmux/scripts/**/*.sh
+
+# WezTerm Terminal Emulator
+!wezterm/
+!wezterm/**/
+!wezterm/**/*.lua
+
+# Worktrunk CLI configuration
+!worktrunk/
+!worktrunk/config.toml
+
+# Yazi Terminal File Manager
+!yazi/
+!yazi/**/*
+
+# YouTube Downloader
+!yt-dlp/
+!yt-dlp/config
+
+# Zed Code Editor
+!zed/
+!zed/settings.json
+!zed/keymap.json
+
+# Zsh Configuration Files
+!zsh/
+!zsh/.zshrc
+!zsh/.zshenv
+!zsh/.zprofile

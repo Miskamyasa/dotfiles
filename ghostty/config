@@ -1,0 +1,8 @@
+font-family = "ZedMono Nerd Font"
+font-size = 14
+
+theme = Terminal Basic
+
+macos-option-as-alt = true 
+
+window-padding-x = 6

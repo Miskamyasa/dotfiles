@@ -1,0 +1,75 @@
+{
+  "version": 3,
+  "lines": [
+    [
+      {
+        "id": "1",
+        "type": "model",
+        "color": ""
+      },
+      {
+        "id": "2",
+        "type": "separator"
+      },
+      {
+        "id": "3",
+        "type": "context-length",
+        "color": "brightBlack"
+      },
+      {
+        "id": "4",
+        "type": "separator"
+      },
+      {
+        "id": "4f20345f-f2d8-4ec9-a53d-f0945422d5d8",
+        "type": "context-percentage-usable",
+        "color": "black"
+      },
+      {
+        "id": "6",
+        "type": "separator"
+      },
+      {
+        "id": "28c1743a-e8e9-42b5-936c-47307b981c33",
+        "type": "tokens-input"
+      },
+      {
+        "id": "6edc9663-3fb1-4605-849e-473cc195a874",
+        "type": "separator"
+      },
+      {
+        "id": "2ea329fa-3240-43e7-9f09-530066ddba0a",
+        "type": "tokens-output",
+        "color": "brightMagenta"
+      },
+      {
+        "id": "4e99235b-1628-4a35-9a1d-52f94900c805",
+        "type": "separator"
+      },
+      {
+        "id": "d5caa85b-8583-4f63-b6fd-cde47bb2d05d",
+        "type": "session-cost",
+        "color": "blue"
+      }
+    ],
+    [],
+    []
+  ],
+  "flexMode": "full-minus-40",
+  "compactThreshold": 60,
+  "colorLevel": 2,
+  "inheritSeparatorColors": false,
+  "globalBold": false,
+  "powerline": {
+    "enabled": false,
+    "separators": [
+      ""
+    ],
+    "separatorInvertBackground": [
+      false
+    ],
+    "startCaps": [],
+    "endCaps": [],
+    "autoAlign": false
+  }
+}

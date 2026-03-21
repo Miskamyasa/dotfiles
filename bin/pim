@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -e
+
+ROOT="$(git rev-parse --show-toplevel 2>/dev/null || pwd)"
+
+# ensure container exists and is running
+devcontainer up --workspace-folder "$ROOT" >/dev/null
+
+exec devcontainer exec --workspace-folder "$ROOT" pi

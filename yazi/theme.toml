@@ -1,0 +1,9 @@
+[status]
+sep_left = { open = "", close = "" }
+sep_right = { open = "", close = "" }
+
+[mgr]
+border_style = { fg = "#446aa8" }
+
+[indicator]
+preview = { }

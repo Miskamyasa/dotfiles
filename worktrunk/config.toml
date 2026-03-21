@@ -1,0 +1,43 @@
+# See "Custom Prompt Templates" section at end of file for inline template options.
+
+# Worktree Path Template
+# Variables:
+#   {{ repo }}              - Repository directory name (e.g., "myproject")
+#   {{ branch }}            - Raw branch name (e.g., "feature/auth")
+#   {{ branch | sanitize }} - Branch name with / and \ replaced by - (e.g., "feature-auth")
+#
+# Paths are relative to the main worktree root (original repository directory).
+#
+# Example paths created (repo at /Users/dev/myproject, branch feature/auth):
+#   "../{{ repo }}.{{ branch | sanitize }}" → /Users/dev/myproject.feature-auth
+#   ".worktrees/{{ branch | sanitize }}"    → /Users/dev/myproject/.worktrees/feature-auth
+worktree-path = "../{{ branch | sanitize }}"
+
+# List Command Defaults
+# Configure default behavior for `wt list`
+[list]
+full = false       # Show CI and default-branch merge-base diffstat (`main…±` column) by default
+branches = false   # Include branches without worktrees by default
+remotes = false    # Include remote branches by default
+
+[projects]
+
+[projects."github.com/Lightricks/ltx-studio"]
+approved-commands = [
+    "yarn install",
+    "yarn init-wt {{ primary_worktree_path }}",
+    "wt step copy-ignored",
+    "echo 'Worktree environment setup complete.'",
+]
+
+[projects."github.com/Miskamyasa/ocean-explorer"]
+approved-commands = [
+    "echo 'Switched to {{ branch }}'",
+    "wt step copy-ignored",
+]
+
+[projects."github.com/Miskamyasa/stocks-hero"]
+approved-commands = [
+    "wt step copy-ignored",
+]
+

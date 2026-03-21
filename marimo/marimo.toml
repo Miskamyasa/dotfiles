@@ -1,0 +1,46 @@
+[experimental]
+
+[runtime]
+auto_instantiate = true
+on_cell_change = "autorun"
+auto_reload = "autorun"
+
+[server]
+follow_symlink = false
+browser = "default"
+
+[save]
+autosave_delay = 1000
+autosave = "after_delay"
+format_on_save = false
+
+[formatting]
+line_length = 79
+
+[package_management]
+manager = "pip"
+
+[keymap]
+preset = "default"
+[keymap.overrides]
+
+[ai]
+rules = ""
+[ai.anthropic]
+
+[ai.google]
+
+[ai.open_ai]
+model = ""
+base_url = "http://localhost:1234/v1"
+
+[display]
+code_editor_font_size = 14
+cell_output = "above"
+dataframes = "rich"
+default_width = "compact"
+theme = "system"
+
+[completion]
+activate_on_typing = true
+copilot = false

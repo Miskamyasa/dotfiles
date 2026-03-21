@@ -1,0 +1,17 @@
+gui:
+  sidePanelWidth: 0.3
+  expandFocusedSidePanel: true
+  expandedSidePanelWeight: 1
+  border: single
+  statusPanelView: allBranchesLog
+  nerdFontsVersion: "3"
+  theme:
+    activeBorderColor:
+      - "#3E7FB5"
+    selectedLineBgColor:
+      - "#d0bdf4"
+git:
+  pagers:
+    - colorArg: always
+      pager: delta --paging=never --line-numbers --file-style=omit --hunk-header-style=file
+  
