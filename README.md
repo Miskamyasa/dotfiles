@@ -1,4 +1,4 @@
-# Denis's .config Dotfiles
+# My dotfiles
 
 This repository contains a curated subset of my `~/.config` setup.
 It is public on purpose, so feel free to copy anything useful.
