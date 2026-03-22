@@ -3,7 +3,7 @@ agent: build
 description: Use this command for executing the code review of the implementation.
 ---
 
-# POST-EXECUTION: ONE-SHOT CODE REVIEW
+# PHASE 3: ONE-SHOT CODE REVIEW
 
 ## Objective
 
@@ -31,8 +31,8 @@ If the review is clean, the main agent can proceed to declare completion and pro
 ### Context
 
 Inputs available:
-- Plan: ${PLAN_FROM_STEP_1};
-- Execution summary: ${EXECUTION_FROM_STEP_2};
+- Plan: ${PLAN_FROM_PHASE_1};
+- Execution summary: ${EXECUTION_FROM_PHASE_2};
 - Changed files list: ${CHANGED_FILES};
 
 You MAY read repository code freely to assess impact.
@@ -79,7 +79,7 @@ Perform a code review to detect regressions and confirm the implementation match
 
 ```markdown
 ## Execution Summary
-[Summary of execution results from Step 2]
+[Summary of execution results from Phase 2]
 
 ## Code Review
 [Structured review report from the review sub-agent]

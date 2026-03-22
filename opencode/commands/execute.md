@@ -3,7 +3,7 @@ agent: build
 description: Use this command to execute the implementation plan created in the previous phase.
 ---
 
-# EXECUTION PHASE
+# PHASE 2: EXECUTION
 
 ## Input
 

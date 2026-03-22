@@ -3,7 +3,7 @@ agent: plan
 description: Use this command to create an implementation plan
 ---
 
-# INVESTIGATION + PLANNING PHASE
+# PHASE 1: INVESTIGATION + PLANNING
 
 ## Context
 
