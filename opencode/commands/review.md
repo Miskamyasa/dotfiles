@@ -85,5 +85,5 @@ Perform a code review to detect regressions and confirm the implementation match
 [Structured review report from the review sub-agent]
 
 ### Proposed Commit Message
-[Title no more than 70 characters, body - the list of changes made after all steps and review.]
+[Title no more than 70 characters, body - the list of changes made after all steps and review. Prefer explaining the "why" over the "what".]
 ```
