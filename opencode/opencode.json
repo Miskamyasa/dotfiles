@@ -22,7 +22,7 @@
             "reasoningEffort": "high"
         },
         "plan": {
-            "model": "anthropic/claude-opus-4-6",
+            "model": "anthropic/claude-opus-4-5",
             "temperature": 0,
             "reasoningEffort": "high"
         },
@@ -46,7 +46,7 @@
             "url": "http://host.docker.internal:3845/mcp"
         },
         "jetbrains": {
-            "enabled": false,
+            "enabled": true,
             "headers": {
                 "Host": "localhost:64342",
                 "Origin": "http://localhost"
