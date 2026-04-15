@@ -32,28 +32,27 @@ For each step in the plan:
 
 ## Sub-Agent Prompt Template
 
-### Inputs for This Prompt
-
-- Step ID: ${STEP_ID};
-- Step Title: ${TITLE};
-- Scope: ${SCOPE};
-
 ### Context
 
 - You MUST read all `AGENTS.md` files — project conventions and coding standards;
 - You MUST read all references explicitly provided: ${STEP_REFERENCES};
 
+### Inputs for This Prompt
+
+- Step Title: ${TITLE};
+- Step Intent: ${INTENT};
+
 ### Objective
 
 Implement exactly this step: ${TITLE}
 
-#### Intent
+### In Scope
 
-${INTENT}
+${IN_SCOPE}
 
-#### Affected Area
+### Out of Scope
 
-${AFFECTED_AREA}
+${OUT_OF_SCOPE}
 
 #### Acceptance Criteria
 
