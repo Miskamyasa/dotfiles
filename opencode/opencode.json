@@ -39,22 +39,7 @@
     ],
     "formatter": false,
     "lsp": false,
-    "mcp": {
-        "figma": {
-            "enabled": false,
-            "type": "remote",
-            "url": "http://host.docker.internal:3845/mcp"
-        },
-        "jetbrains": {
-            "enabled": true,
-            "headers": {
-                "Host": "localhost:64342",
-                "Origin": "http://localhost"
-            },
-            "type": "remote",
-            "url": "http://host.docker.internal:64342/sse"
-        }
-    },
+    "mcp": {},
     "plugin": [],
     "provider": {},
     "share": "disabled",
