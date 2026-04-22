@@ -2,7 +2,7 @@
 description: Use this command to create an implementation plan
 ---
 
-# PHASE 1: INVESTIGATE + PLAN
+# INVESTIGATE + PLAN
 
 ## Context
 

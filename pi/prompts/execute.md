@@ -2,7 +2,7 @@
 description: Use this command to execute the implementation plan
 ---
 
-# PHASE 2: GENERATE IMPLEMENTATION PROMPTS + EXECUTE
+# GENERATE IMPLEMENTATION PROMPTS + EXECUTE
 
 ## Additional Input
 

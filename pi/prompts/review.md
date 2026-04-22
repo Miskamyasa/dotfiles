@@ -2,7 +2,7 @@
 description: Use this command to execute the code review
 ---
 
-# PHASE 3: ONE-SHOT CODE REVIEW
+# ONE-SHOT CODE REVIEW
 
 ## Objective
 
@@ -30,8 +30,8 @@ If the review is clean, the main agent can proceed to declare completion and pro
 ### Context
 
 Inputs available:
-- Plan: ${PLAN_FROM_PHASE_1};
-- Execution summary: ${EXECUTION_FROM_PHASE_2};
+- Plan: ${PLAN_FROM_PLANNING_PHASE};
+- Execution summary: ${EXECUTION_FROM_EXECUTION_PHASE};
 - Changed files list: ${CHANGED_FILES};
 
 You MAY read repository code freely to assess impact.
